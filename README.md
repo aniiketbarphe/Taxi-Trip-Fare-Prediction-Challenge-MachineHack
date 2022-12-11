@@ -10,12 +10,15 @@ This hackathon will try to address the challenges faced by taxi operators in quo
 
 From available dataset, finding the best set of features from the dataset, building a machine learning model to predict trip fare based on other trip features.
 
-Train: 35000 rows x 20 columns 
-Test: 15000 rows x 19 columns
-Data description:
-Trip_distance: The elapsed trip distance in miles reported by the taximeter.
-Rate_code: The final rate code is in effect at the end of the trip. 1= Standard rate,2=JFK,3=Newark, 4=Nassau or Westchester, 5=Negotiated fare,6=Group ride
-Storeandfwd_flag: This flag indicates whether the trip record was held in vehicle memory before sending it to the vendor and determines if the trip was stored in the server and forwarded to the vendor. Y= store and forward trip N= not a store and forward trip
+**3) About the Dataset:-** Dataset contains following files,
+
+**a) Train:-** 35000 rows x 20 columns 
+**b) Test:-** 15000 rows x 19 columns
+**c) Data description:-**
+
+**1) Trip_distance:** The elapsed trip distance in miles reported by the taximeter.
+**2) Rate_code:** The final rate code is in effect at the end of the trip. 1= Standard rate,2=JFK,3=Newark, 4=Nassau or Westchester, 5=Negotiated fare,6=Group ride
+**3) Storeandfwd_flag:** This flag indicates whether the trip record was held in vehicle memory before sending it to the vendor and determines if the trip was stored in the server and forwarded to the vendor. Y= store and forward trip N= not a store and forward trip
 Payment_type: A numeric code signifying how the passenger paid for the trip. 1= Credit card,2= Cash, 3= No charge, 4= Dispute, 5= Unknown, 6= Voided trip
 Fare_amount: The time-and-distance fare calculated by the meter
 Extra: Miscellaneous extras and surcharges.
