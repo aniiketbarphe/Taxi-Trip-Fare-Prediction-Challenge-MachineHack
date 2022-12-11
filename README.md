@@ -13,7 +13,9 @@ From available dataset, finding the best set of features from the dataset, build
 **3) About the Dataset:-** Dataset contains following files,
 
 **a) Train:-** 35000 rows x 20 columns 
+
 **b) Test:-** 15000 rows x 19 columns
+
 **c) Data description:-**
 
 **1) Trip_distance:** The elapsed trip distance in miles reported by the taximeter.
