@@ -16,55 +16,82 @@ From available dataset, finding the best set of features from the dataset, build
 
 **3) About the Dataset:-** Dataset contains following files,
 
-**a) Train:-** 35000 rows x 20 columns 
+**3.1) Train:-** 35000 rows x 20 columns 
 
-**b) Test:-** 15000 rows x 19 columns
+**3.2) Test:-** 15000 rows x 19 columns
 
-**c) Data description:-**
+**3.3) Data description:-**
 
-**1) Trip_distance:** The elapsed trip distance in miles reported by the taximeter.
+**a) Trip_distance:** The elapsed trip distance in miles reported by the taximeter.
 
-**2) Rate_code:** The final rate code is in effect at the end of the trip. 1= Standard rate,2=JFK,3=Newark, 4=Nassau or Westchester, 5=Negotiated fare,6=Group ride
+**b) Rate_code:** The final rate code is in effect at the end of the trip. 1= Standard rate,2=JFK,3=Newark, 4=Nassau or Westchester, 5=Negotiated fare,6=Group ride
 
-**3) Storeandfwd_flag:** This flag indicates whether the trip record was held in vehicle memory before sending it to the vendor and determines if the trip was stored in the server and forwarded to the vendor. Y= store and forward trip N= not a store and forward trip
+**c) Storeandfwd_flag:** This flag indicates whether the trip record was held in vehicle memory before sending it to the vendor and determines if the trip was stored in the server and forwarded to the vendor. Y= store and forward trip N= not a store and forward trip
 
-**4) Payment_type:** A numeric code signifying how the passenger paid for the trip. 1= Credit card,2= Cash, 3= No charge, 4= Dispute, 5= Unknown, 6= Voided trip
+**d) Payment_type:** A numeric code signifying how the passenger paid for the trip. 1= Credit card,2= Cash, 3= No charge, 4= Dispute, 5= Unknown, 6= Voided trip
 
-**5) Fare_amount:** The time-and-distance fare calculated by the meter
+**e) Fare_amount:** The time-and-distance fare calculated by the meter
 
-**6) Extra:** Miscellaneous extras and surcharges
+**f) Extra:** Miscellaneous extras and surcharges
 
-**7) Mta_tax:** $0.50 MTA tax that is automatically triggered based on the metered rate in use
+**g) Mta_tax:** $0.50 MTA tax that is automatically triggered based on the metered rate in use
 
-**8) Tip_amount:** Tip amount credited to the driver for credit card transactions
+**h) Tip_amount:** Tip amount credited to the driver for credit card transactions
 
-**9) Tolls_amount:** Total amount of all tolls paid in the trip
+**i) Tolls_amount:** Total amount of all tolls paid in the trip
 
-**10) Imp_surcharge:** $0.30 extra charges added automatically to all rides
+**j) Imp_surcharge:** $0.30 extra charges added automatically to all rides
 
-**11) Total_amount:** The total amount charged to passengers. Does not include cash tips
+**k) Total_amount:** The total amount charged to passengers. Does not include cash tips
 
-**12) Pickuplocationid:** TLC Taxi Zone in which the taximeter was engaged
+**l) Pickuplocationid:** TLC Taxi Zone in which the taximeter was engaged
 
-**13) Dropofflocationid:** TLC Taxi Zone in which the taximeter was disengaged
+**m) Dropofflocationid:** TLC Taxi Zone in which the taximeter was disengaged
 
-**14) Year:** The year in which the taxi trip was taken
+**n) Year:** The year in which the taxi trip was taken
 
-**15) Month:** The month on which the taxi trip was taken
+**o) Month:** The month on which the taxi trip was taken
 
-**16) Day:** The day on which the taxi trip was taken
+**p) Day:** The day on which the taxi trip was taken
 
-**17) Day_of_week:** The day of the week on which the taxi trip was taken
+**q) Day_of_week:** The day of the week on which the taxi trip was taken
 
-**18) Hour_of_day:** Used to determine the hour of the day in 24 hours format
+**r) Hour_of_day:** Used to determine the hour of the day in 24 hours format
 
-**19) Trip_duration:** The total duration of the trip in seconds
-calculated_total_amount: The total amount the customer has to pay for the taxi.
+**s) Trip_duration:** The total duration of the trip in seconds
 
-Evaluation:-
+**3.4) Output feature (Target feature):-**
 
-The submission will be evaluated using the RMSE metric. One can use ‘np. sqrt (Mean Squared Error)’ to calculate the same. [mean_squared_error(y_true, y_pred, squared=False)]
-This hackathon supports private and public leaderboards
-The public leaderboard is evaluated on 30% of Test data
-The private leaderboard will be made available at the end of the hackathon which will be evaluated on 100% of Test data
-The Final Score represents the score achieved based on the Best Score on the public leaderboard
+**a) calculated_total_amount:** The total amount the customer has to pay for the taxi
+
+**4) Evaluation metric:-** The submission will be evaluated using the RMSE metric
+
+**5) Public and Private Split:-**
+
+a) This hackathon supports private and public leaderboards.
+
+b) The public leaderboard is evaluated on 30% of Test data
+
+c) The private leaderboard will be made available at the end of the hackathon, which will be evaluated on 100% Test data
+
+# Summary
+
+**a) Best Submission Score:-**
+
+**1) Public Leaderboard :-** 19.45867
+
+**2) Private Leaderboard :-** 19.16595
+
+**b) Best Model:-** Histogram Gradient Boosting Regression
+
+![Public-Leaderboard](https://user-images.githubusercontent.com/84449238/208469594-1c380606-5b36-4514-b936-ad92ba7d2ebd.jpg)
+
+![Private-Leaderboard](https://user-images.githubusercontent.com/84449238/208469629-0ccc112f-f5bf-4d15-9b9b-ce0b893576f0.jpg)
+
+**c) Competition Link:-** https://machinehack.com/hackathons/iiit_nr_taxi_trip_fare_prediction_challenge/leaderboard
+
+**d) Rank Scored:-**
+
+a) **07** out of **441** registered participants (Public Leaderboard)
+
+b) **61** out of **441** registered participants (Private Leaderboard)
